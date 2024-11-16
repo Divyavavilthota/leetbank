@@ -1,0 +1,155 @@
+/* Main Container */
+.leetbank-container {
+  font-family: Arial, sans-serif;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links span {
+  margin-left: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-links span:hover {
+  color: #ddd;
+}
+
+/* Main Content Layout */
+.content-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px auto;
+  height: calc(100vh - 160px);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Form Section */
+.form-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #f7f9fc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-section h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.form-section label {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #444;
+}
+
+.form-section input,
+.form-section textarea {
+  padding: 10px;
+  font-size: 1em;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Difficulty Options (Radio Buttons) */
+.difficulty-options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.form-section button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 50%;
+  align-self: center;
+  transition: background-color 0.3s;
+}
+
+.form-section button:hover {
+  background-color: #45a049;
+}
+
+/* Submitted Codes Section */
+.submitted-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  box-sizing: border-box;
+  height: 110vh; /* Increased height to make it taller */
+  min-height: 500px; /* Ensures it doesn't shrink too small */
+}
+
+.submitted-section h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.submitted-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px; /* Increased margin between items */
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.submitted-item h4 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+}
+
+.submitted-item pre {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-size: 1em;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-height: 300px; /* Max height to make sure code does not overflow */
+  overflow-y: auto;
+}
